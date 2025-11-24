@@ -472,7 +472,12 @@
           alt=""
         />
         <button onclick="cancel()" class="four">Cancel</button>
-        <input value="Change" type="file" onchange="change(event)" />
+        <input
+          value="Change"
+          type="file"
+          onchange="change(event)"
+          accept=".png, .jpg, .jpg"
+        />
         <button onclick="add(this)" class="five">Add</button>
       </div>
 
@@ -726,6 +731,4 @@
       params.disabled = false;
     }, 3000);
   }
-
-  localStorage.clear();
 </script>
